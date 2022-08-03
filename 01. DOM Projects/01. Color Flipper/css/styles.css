@@ -1,0 +1,43 @@
+@import url(./globalStyles.css);
+@import url(./variables.css);
+
+/* navbar */
+
+.title {
+  color: var(--primary-color);
+}
+.navbar {
+  padding: 1rem 1.5rem;
+  box-shadow: var(--dark-shadow);
+  background-color: var(--primary-white-2);
+}
+.nav-center {
+  max-width: 600px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* hero section */
+.hero-section {
+  height: calc(100vh - 53px);
+  display: grid;
+  place-items: center;
+}
+.flipper {
+  text-align: center;
+}
+.flipper h2 {
+  background-color: var(--primary-black);
+  width: 100%;
+  padding: 1rem;
+  color: var(--primary-white);
+  margin-bottom: 2rem;
+  border-radius: var(--radius);
+  font-size: 2rem;
+}
+.flipper span {
+  text-transform: lowercase;
+}

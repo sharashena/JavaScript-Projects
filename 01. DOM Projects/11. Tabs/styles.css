@@ -1,0 +1,121 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+  background-color: #f1f5f8;
+}
+
+/* global styles */
+
+img {
+  width: 100%;
+  height: 17rem;
+  object-fit: cover;
+  display: block;
+  border-radius: 0.5rem;
+}
+h2 {
+  text-transform: capitalize;
+  letter-spacing: 0.25rem;
+  padding-bottom: 0.5rem;
+}
+h4 {
+  text-transform: capitalize;
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  margin-bottom: 0.5rem;
+}
+p {
+  color: hsl(210, 22%, 49%);
+}
+
+/* global classes */
+
+.section {
+  padding: 2rem;
+}
+.section-center {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: grid;
+  place-items: center;
+}
+.section-title {
+  text-align: center;
+}
+.active-tab {
+  background-color: #fff;
+  color: #222;
+}
+.active-text {
+  display: block;
+}
+
+/* about */
+
+.container {
+  margin: 4rem 0;
+}
+.about-content {
+  background-color: #fff;
+  margin-top: 2rem;
+}
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  flex: 1 0 33.33%;
+  padding: 1rem 0;
+  cursor: pointer;
+  font-size: 1rem;
+  display: block;
+  background-color: hsl(212, 33%, 89%);
+  letter-spacing: 0.25rem;
+  color: #222;
+  text-transform: capitalize;
+  border: 0;
+  transition: all 0.3s linear;
+}
+.btn:hover {
+  background-color: hsl(205, 100%, 96%);
+}
+.btn:first-child {
+  border-top-left-radius: 0.25rem;
+  border-bottom-left-radius: 0.25rem;
+}
+.btn:last-child {
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.text-container {
+  padding: 1.5rem;
+}
+.text-content {
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.active-tab:hover {
+  background-color: #fff;
+}
+
+@media screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+    align-items: flex-start;
+  }
+  .about-content {
+    margin-top: 0;
+  }
+}

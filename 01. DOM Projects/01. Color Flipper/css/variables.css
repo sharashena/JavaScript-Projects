@@ -1,0 +1,12 @@
+:root {
+  --primary-white: #fff;
+  --primary-white-2: #f1f5f8;
+  --primary-color: #49a6e9;
+  --primary-black: #222;
+  --ff-primary: "Open Sans", sans-serif;
+  --transition: all 0.3s linear;
+  --spacing: 0.25rem;
+  --radius: 0.5rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}

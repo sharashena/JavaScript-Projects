@@ -1,0 +1,38 @@
+@media screen and (min-width: 768px) {
+  .menus {
+    max-width: 1170px !important;
+    margin: 0 auto;
+    width: 600px;
+  }
+  .single-menu {
+    display: flex;
+  }
+  .single-menu img {
+    width: 200px;
+    height: 175px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  .menu-container {
+    padding-left: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  header {
+    margin-top: 0 !important;
+  }
+  h4 {
+    font-size: 1rem !important;
+  }
+  p {
+    font-size: 1rem !important;
+  }
+}
+@media screen and (min-width: 1130px) {
+  .menus {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1.5rem;
+    max-width: 100% !important;
+    width: 100%;
+  }
+}

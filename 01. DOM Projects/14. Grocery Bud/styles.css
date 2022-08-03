@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  background-color: #f1f5f8;
+  color: hsl(209, 61%, 16%);
+}
+.section {
+  padding: 0 1rem;
+}
+.section-center {
+  max-width: 35rem;
+  width: 90vw;
+  margin: 8rem auto 0;
+}
+
+/* grocery */
+.grocery-container {
+  text-align: center;
+  letter-spacing: 2px;
+  background-color: #fff;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s linear;
+  border-radius: 0.5rem;
+}
+.grocery-container:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+h3 {
+  font-size: 1.5rem;
+  text-transform: capitalize;
+}
+.clear-items {
+  color: hsl(360, 71%, 66%);
+  background-color: transparent;
+  border: 0;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  cursor: pointer;
+  font-size: 0.85rem;
+  transition: color 0.3s linear;
+}
+.clear-items:hover {
+  color: hsl(360, 67%, 44%);
+}
+.hidden {
+  display: none;
+}
+
+.alert {
+  text-transform: capitalize;
+  font-size: 0.7rem;
+  border-radius: 0.25rem;
+  padding: 0.1rem;
+}
+.alert-danger {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.alert-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+/* form */
+.grocery-form {
+  margin: 1rem 0 2rem;
+  display: flex;
+}
+input {
+  flex: 1 0 auto;
+  padding: 0.25rem;
+  padding-left: 1rem;
+  background-color: hsl(210, 36%, 96%);
+  border-top-left-radius: 0.5rem;
+  border-bottom-left-radius: 0.5rem;
+  border: none;
+  outline: none;
+  color: hsl(210, 22%, 49%);
+  font-size: 1rem;
+}
+.submit {
+  border: none;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+  flex: 0 0 5rem;
+  background-color: hsl(205, 86%, 81%);
+  letter-spacing: 1.5px;
+  text-transform: capitalize;
+  padding: 0.25rem;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.submit:hover {
+  background-color: #49a6e9;
+  color: #f1f5f8;
+}
+
+/* grocery list */
+.grocery-list {
+  display: flex;
+  flex-direction: column;
+}
+.list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  transition: all 0.3s linear;
+  padding: 0.25rem 1rem;
+  border-radius: 0.5rem;
+  text-transform: capitalize;
+}
+.list:hover {
+  background-color: hsl(210, 36%, 96%);
+}
+.btn-container button {
+  cursor: pointer;
+  border: none;
+  transition: all 0.3s linear;
+  font-size: 0.7rem;
+  margin: 0 0.15rem;
+  background-color: transparent;
+}
+.btn-container button:first-child {
+  color: hsl(125, 71%, 66%);
+}
+.btn-container button:first-child:hover {
+  color: hsl(125, 67%, 44%);
+}
+.btn-container button:last-child {
+  color: hsl(360, 71%, 66%);
+}
+.btn-container button:last-child:hover {
+  color: hsl(360, 67%, 44%);
+}

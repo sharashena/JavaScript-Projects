@@ -1,0 +1,129 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f1f5f8;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  letter-spacing: 0.25rem;
+  border-radius: 0.25rem;
+}
+
+.hero-section {
+  display: grid;
+  place-content: center;
+  height: 100vh;
+  max-width: 550px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 3rem;
+}
+.underline {
+  height: 0.25rem;
+  width: 5rem;
+  background-color: #49a6e9;
+  margin: 0.5rem auto 0;
+}
+h2 {
+  font-size: 2rem;
+}
+
+.review {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+.img-container {
+  margin-bottom: 1rem;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto 1rem;
+  position: relative;
+  z-index: 1;
+}
+.img-container::before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f10e";
+  position: absolute;
+  background-color: #49a6e9;
+  color: #fff;
+  width: 2.5rem;
+  height: 2.5rem;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+}
+.img-container::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(5%, -5%);
+  border-radius: 50%;
+  background-color: #49a6e9;
+  z-index: -1;
+}
+img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+#author {
+  text-transform: capitalize;
+  font-size: 0.875rem;
+}
+#job {
+  letter-spacing: 0;
+  color: #49a6e9;
+  text-transform: uppercase;
+  margin: 0.5rem 0;
+}
+#text {
+  letter-spacing: 0;
+  color: rgb(160, 156, 156);
+  margin-bottom: 1rem;
+}
+button {
+  background-color: transparent;
+  border: 0;
+  font-size: 1.5rem;
+  color: #49a6e9;
+  margin: 0 0.5rem;
+  cursor: pointer;
+}
+.random {
+  display: block;
+  margin: 1rem auto;
+  text-transform: capitalize;
+  font-size: 0.9rem;
+  border: 2px solid #49a6e9;
+  border-radius: 0.5rem;
+  padding: 0.2rem 0.75rem;
+  transition: all 0.3s linear;
+}
+.random:hover {
+  background-color: #49a6e9;
+  color: #fff;
+}
