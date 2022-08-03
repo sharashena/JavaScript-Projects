@@ -1,1 +1,1 @@
-Hello, This is javascript DOM section with good projects and also getting know to what is DOM and gain more experience with these projects.
+Hello, This is JavaScript project section. Doing this projects will get to better understanding what is DOM, How Works DOM, OOP (Object Oriented Programing), AJAX and gain more experience with these projects.
